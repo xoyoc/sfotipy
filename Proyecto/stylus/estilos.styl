@@ -1,23 +1,110 @@
 @import "normalize.styl"
+@import "fonts.styl"
+
 gris_oscuro=#333333
 gris_claro=#818181
+rosado=#BD255B
 
+a 
+	text-decoration none
 body 
 	font-size 16px
+	font-family 'Varela Round', sans-serif
 figure
 	margin 0
 p 
 	margin .5em 0
-.contenido
-	display flex
-	justify-content space-arounds
-	flex-flow row wrap
-	padding 1.4em
-.canciones
-	width 8em
-	padding-right 1em
-	padding-bottom 1em
-.nombre
-	color gris_oscuro
 .autor
 	color gris_claro
+.centrado-flex
+	display flex
+	flex-flow row wrap
+	justify-content space-arounds
+.contenido
+	padding 1.4em
+.canciones
+	padding-bottom 1em
+	padding-right 1em
+	width 8em
+.barra-acciones
+	background rgba(black, .3)
+	bottom 0
+	left 0
+	padding 1em
+	position absolute
+	right 0
+	text-align right
+.accion
+	color white
+	font-size 1.2rem
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gris
+		color gris_claro
+.border-bottom
+	border-bottom 1px solid gris_claro
+.menu
+	display none
+.nombre
+	color gris_oscuro
+.cabezera
+	height 3.5rem
+	.boton__menu
+		color gris_oscuro
+		left .5rem
+		margin-top -10px
+		position absolute
+		top 50%
+	.titulo
+		font-size 1.1rem
+		line-height 3.5rem
+		text-align center
+.center-block
+	margin 0 auto
+.center-texto
+	text-align center
+.reproducion
+	display none
+	&.small
+		width 20em
+.relative
+	position relative
+.barra-progreso
+	margin 1em 0
+	.min 
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		margin 0 auto
+		width 75%
+	.estado
+		background rosado
+		border-radius 5px
+		height 5px
+		width 30%
+	.circulo
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+.panel-reproducion
+	justify-content space-between
+	margin 1em 0
+	width 100%
+@media screen and (min-width:480px)
+	body
+		background red
+		

@@ -3,13 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Proyecto de Sfotipy</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header class="cabezera">
-		
+	<header class="cabezera border-bottom relative">
+		<a href="" class="boton__menu icon-menu"></a>
+		<nav class="menu">
+			<ul class="lista">
+				<il class="elemento"><a href="#">Top Hits</a></il>
+				<il class="elemento"><a href="#">Profile</a></il>
+				<il class="elemento"><a href="#">Settings</a></il>
+				<il class="elemento"><a href="#">My Likes</a></il>
+				<il class="elemento"><a href="#">Playlists</a></il>
+				<il class="elemento"><a href="#">Logout</a></il>
+			</ul>
+		</nav>
+		<h1 class="titulo">
+			Top Hitss
+		</h1>
 	</header>
-	<section class="contenido">
+	<section class="reproducion small center-block">
+		<figure class="imagen relative">
+			<img src="img/cans/test-playing.jpg" width="320" heigth="320" alt="Come Get It Bea Pharrell Williams">
+			<div class="barra-acciones">
+				<a href="#" class="accion icon-add"></a>
+				<a href="#" class="accion icon-love"></a>
+				<a href="#" class="accion icon-share"></a>
+			</div>
+		</figure>
+		<div class="barra-progreso relative">
+			<span class="min">0:30</span>
+			<div class="total">
+				<div class="estado relative">
+					<div class="circulo"></div>
+				</div>
+			</div>
+			<span class="max">3:12</span>
+		</div>
+		<div class="descripcion center-texto border-bottom">
+			<p class="nombre">
+				Come Get It Bea
+			</p>
+			<p class="autor">
+				Pharrell Williams
+			</p>
+		</div>
+		<div class="panel-reproducion center-texto centrado-flex">
+			<a href="" class="accion gris icon-prev"></a>
+			<a href="" class="accion gris icon-play"></a>
+			<a href="" class="accion gris icon-next"></a>
+			<a href="" class="accion gris icon-random"></a>
+			<a href="" class="accion gris icon-vol"></a>
+		</div>
+	</section>
+	<section class="contenido centrado-flex">
 		<article class="canciones">
 			<figure class="imagen">
 				<img src="img/cans/test.jpg" width="128" heigth="128" alt="Girl Pharrell Williams">
